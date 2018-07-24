@@ -17,8 +17,8 @@ export default class App extends Component {
           <img src={logo} alt="YAAAAAAAY!" />
         </header>
 
-        <div className="days">
-            {days} days!
+        <div className="content">
+            {days} DAYS!
         </div>
 
         <div className="footer">
