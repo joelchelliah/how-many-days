@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
-import TimeAgo from 'react-timeago'
-import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
+import Moment from 'react-moment';
+import moment from 'moment';
 
 import logo from './logo.gif';
 import './App.css';
 
-class App extends Component {
-  formatter(value, unit) {
-    return value + ' ' + unit + '!'
-  }
-
+export default class App extends Component {
   render() {
+    const date = moment("01.10.2018", "DD-MM-YYYY");
+    const days = date.diff(moment(), 'days');
+
     return (
       <div className="App">
         <header className="header">
-          <h1 className="title">Days Until The Invasion...</h1>
+          <h1>How many days?!</h1>
+          <img src={logo} alt="YAAAAAAAY!" />
         </header>
-        <img src={logo} className="logo" alt="logo" />
+
         <div className="days">
-          <TimeAgo date="Oct 01, 2018" formatter={this.formatter}  />
+            {days} days!
+        </div>
+
+        <div className="footer">
+          until {date.format('MMMM Do YYYY')}
         </div>
       </div>
     );
   }
 }
-
-export default App;
