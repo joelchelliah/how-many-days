@@ -1,3 +1,3 @@
 # How Many Days?
 
-[Click!](joelchelliah.github.io/how-many-days)
+### [Find out!](https://joelchelliah.github.io/how-many-days/index.html)
