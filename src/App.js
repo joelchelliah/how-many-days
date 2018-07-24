@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Moment from 'react-moment';
 import moment from 'moment';
 
-import logo from './logo.gif';
+import yay from './yay.gif';
 import './App.css';
 
 export default class App extends Component {
@@ -14,7 +14,7 @@ export default class App extends Component {
       <div className="App">
         <header className="header">
           <h1>How many days?!</h1>
-          <img src={logo} alt="YAAAAAAAY!" />
+          <img src={yay} alt="YAAAAAAAY!" />
         </header>
 
         <div className="content">
