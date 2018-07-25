@@ -14,19 +14,43 @@ h1 {
 .header {
   color: white;
   padding: 10px 0 40px;
-  border-bottom: solid 3px #000;
+  border-bottom: solid 4px #000;
 }
 
 .content {
-  background-color: #fff;
-  padding: 20px 0;
-  font-size: 4em;
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  padding: 35px 0;
+  font-size: 4.2em;
   font-weight: bold;
+  -webkit-animation: slide 5s linear infinite;
+  -moz-animation: slide 5s linear infinite;
+  -o-animation: slide 5s linear infinite;
+  animation: slide 5s linear infinite;
 }
 
 .footer {
   color: white;
   padding: 40px 0;
-  font-size: 0.75em;
-  border-top: solid 3px #000;
+  font-size: 0.85em;
+  border-top: solid 4px #000;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+@-moz-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+@-o-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
 }
