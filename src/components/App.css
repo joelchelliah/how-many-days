@@ -14,11 +14,7 @@ h1 {
 .header {
   color: white;
   padding: 10px 0 40px;
-  border-bottom: solid 4px #888;
-}
-
-.header img {
-  height: 200px;
+  border-bottom: solid 3px #000;
 }
 
 .content {
@@ -32,5 +28,5 @@ h1 {
   color: white;
   padding: 40px 0;
   font-size: 0.75em;
-  border-top: solid 4px #888;
+  border-top: solid 3px #000;
 }
