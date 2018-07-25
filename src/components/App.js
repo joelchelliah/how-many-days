@@ -17,7 +17,7 @@ export default class App extends Component {
         </header>
 
         <div className="content">
-            {days} DAYS!
+            <span className="text">{days} DAYS!</span>
         </div>
 
         <div className="footer">

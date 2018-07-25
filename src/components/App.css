@@ -18,14 +18,23 @@ h1 {
 }
 
 .content {
-  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  background: #fff url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  opacity: 0.8;
   padding: 35px 0;
   font-size: 4.2em;
   font-weight: bold;
-  -webkit-animation: slide 5s linear infinite;
-  -moz-animation: slide 5s linear infinite;
-  -o-animation: slide 5s linear infinite;
-  animation: slide 5s linear infinite;
+  -webkit-animation: slide-background 3s linear infinite;
+  -moz-animation: slide-background 3s linear infinite;
+  -o-animation: slide-background 3s linear infinite;
+  animation: slide-background 3s linear infinite;
+}
+
+.content .text {
+  display: block;
+  -webkit-animation: tilt-text 5s linear infinite;
+  -moz-animation: tilt-text 5s linear infinite;
+  -0-animation: tilt-text 5s linear infinite;
+  animation: tilt-text 5s linear infinite;
 }
 
 .footer {
@@ -35,22 +44,16 @@ h1 {
   border-top: solid 4px #000;
 }
 
-@-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
+@keyframes slide-background {
+  0% { background-position: 0 0; opacity: 1; }
+  50% { background-position: -300px 0; opacity: 0.7; }
+  100% { background-position: -600px 0; opacity: 1; }
 }
 
-@-moz-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
-}
-
-@-o-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
-}
-
-@keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
+@keyframes tilt-text {
+  0% {transform:translateY(-3px) rotate(0deg);}
+  25% {transform:translateX(-25px) translateY(0px) rotate(-3deg);}
+  50% {transform:translateY(-3px) rotate(0deg);}
+  75% {transform:translateX(25px) translateY(3px) rotate(3deg);}
+  100%{transform:translateY(-3px) rotate(0deg);}
 }
